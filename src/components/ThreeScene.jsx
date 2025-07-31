@@ -223,10 +223,10 @@ const ThreeScene = ({
         />
         
         {!originalImage && (
-          <div className="absolute inset-0 flex items-center justify-center bg-muted/50 rounded-lg">
-            <p className="text-muted-foreground">อัพโหลดรูปภาพเพื่อเริ่มต้น</p>
-          </div>
-        )}
+  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+    <p className="text-lg text-muted-foreground">อัพโหลดรูปภาพเพื่อเริ่มต้น</p>
+  </div>
+)}
       </CardContent>
     </Card>
   )
