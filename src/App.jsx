@@ -33,7 +33,8 @@ function App() {
       const formData = new FormData()
       formData.append('image', file)
 
-      const response = await fetch('http://localhost:5001/api/image/upload', {
+      const apiUrl = `${import.meta.env.VITE_API_BASE_URL}/api/upload`;
+      const response = await fetch(apiUrl, {
         method: 'POST',
         body: formData
       })
