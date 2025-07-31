@@ -102,7 +102,7 @@ const ImageUpload = ({ onImageUpload, uploadedImage, isProcessing }) => {
           <div
             className={`flex-1 border-2 border-dashed rounded-lg flex flex-col items-center justify-center p-6 transition-colors ${
               dragActive
-                ? 'border-primary'
+                ? 'border-primary bg-primary/5'
                 : 'border-muted-foreground/25 hover:border-primary/50'
             }`}
             onDragEnter={handleDrag}
