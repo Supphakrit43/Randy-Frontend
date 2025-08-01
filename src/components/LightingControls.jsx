@@ -43,7 +43,7 @@ const LightingControls = ({
 
   const fetchCategories = async () => {
     try {
-      const response = await fetch('http://localhost:5001/api/products/categories')
+      const response = await fetch('https://randy-backend.onrender.com')
       const data = await response.json()
       if (data.success) {
         setCategories(data.categories)
